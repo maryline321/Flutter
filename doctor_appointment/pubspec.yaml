@@ -42,6 +42,7 @@ dependencies:
   rating_dialog: ^2.0.4
   shared_preferences: ^2.2.2
   provider: ^6.1.1
+  get: ^4.6.6
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +68,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+     - assets/
      - assets/images/
      - assets/icons/
 
