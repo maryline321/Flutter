@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MainLayout extends StatefulWidget {
-  const MainLayout({Key? key});
+  const MainLayout({super.key});
 
   @override
   State<MainLayout> createState() => _MainLayoutState();
@@ -37,7 +37,7 @@ class _MainLayoutState extends State<MainLayout> {
             setState(() {
               currentPage = page;
               _page.animateToPage(page,
-                  duration: Duration(milliseconds: 500),
+                  duration: const Duration(milliseconds: 500),
                   curve: Curves.easeInOut,
               );
             });

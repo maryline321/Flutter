@@ -1,10 +1,6 @@
 
-import 'package:doctor_appointment/components/button.dart';
 import 'package:doctor_appointment/utils/config.dart';
-import 'package:doctor_appointment/utils/main_layout.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 import '../utils/text.dart';
 

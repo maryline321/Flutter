@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 class SocialButton extends StatelessWidget {
   const SocialButton({
-    Key? key,
+    super.key,
     required this.social,
-  }) : super(key: key);
+  });
 
   final String social;
 

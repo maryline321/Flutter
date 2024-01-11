@@ -3,13 +3,10 @@ import 'package:doctor_appointment/components/social_button.dart';
 import 'package:doctor_appointment/utils/config.dart';
 import 'package:doctor_appointment/utils/text.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
-import '../utils/main_layout.dart';
 
 class AuthPage extends StatefulWidget {
-  const AuthPage({Key? key});
+  const AuthPage({super.key});
 
   @override
   State<AuthPage> createState() => _AuthPageState();
