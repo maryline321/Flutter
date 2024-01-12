@@ -47,5 +47,6 @@ class Config {
           color: Colors.red
       )
   );
-  static const primaryColor = Colors.greenAccent;
+  static const primary = Colors.greenAccent;
+  static const Color primaryColor = Color(0xFF0d6efd);
 }

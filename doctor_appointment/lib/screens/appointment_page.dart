@@ -146,12 +146,12 @@ List<dynamic> schedules = [
                     itemCount: filteredSchedules.length,
                       itemBuilder: ((context, index)
                       {
-                        var _schedule = filteredSchedules[index];
+                        var schedule = filteredSchedules[index];
                         bool islastElement = filteredSchedules.length + 1 == index;
                         return Card(
+                          color: Colors.white,
                           shape: RoundedRectangleBorder(
-
-                            side:  BorderSide(
+                            side:  const BorderSide(
                               color: Colors.grey,
                             ),borderRadius: BorderRadius.circular(20)
                           ),
@@ -159,34 +159,34 @@ List<dynamic> schedules = [
                           ? const EdgeInsets.only(bottom: 20)
                               :EdgeInsets.zero,
                           child: Padding(
-                            padding: EdgeInsets.all(15),
+                            padding: const EdgeInsets.all(15),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.stretch,
                               children: [
                                 Row(
                                   children: [
                                     CircleAvatar(
-                                      backgroundImage: AssetImage( _schedule['doctor_profile'] ),
+                                      backgroundImage: AssetImage( schedule['doctor_profile'] ),
                                     ),
-                                   SizedBox(
+                                   const SizedBox(
                                      width: 10,
                                    ),
                                     Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          _schedule['doctor_name'] ,
+                                          schedule['doctor_name'] ,
 
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                               color: Colors.black,
                                               fontWeight: FontWeight.bold
                                           ),
                                         ),
-                                        SizedBox(height: 5,),
+                                        const SizedBox(height: 5,),
                                         Text(
-                                          _schedule['category'] ,
+                                          schedule['category'] ,
 
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                               color: Colors.black,
                                               fontWeight: FontWeight.bold
                                           ),
@@ -197,11 +197,11 @@ List<dynamic> schedules = [
 
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 15,
                                 ),
-                                ScheduleCard(),
-                                SizedBox(
+                                const ScheduleCard(),
+                                const SizedBox(
                                   height: 15,
                                 ),
                                 Row(
@@ -211,25 +211,25 @@ List<dynamic> schedules = [
                                       child: ElevatedButton(
                                         onPressed: () {},
                                         style: ElevatedButton.styleFrom(
-                                          backgroundColor: Colors.white,
+                                          backgroundColor: Colors.grey,
                                           shape: RoundedRectangleBorder(
                                             borderRadius: BorderRadius.circular(5),
                                           ),
                                           fixedSize: const Size(double.infinity, 5),
                                         ),
                                         child: const Text(
-                                          'Cancel',
-                                          style: TextStyle(color: Config.primaryColor),
+                                          'Reschedule',
+                                          style: TextStyle(color: Colors.black),
                                         ),
                                       ),
                                     ),
-                                    SizedBox(width: 5,),
+                                    const SizedBox(width: 5,),
 
                                     Expanded(
                                       child: ElevatedButton(
                                         onPressed: () {},
                                         style: ElevatedButton.styleFrom(
-                                          backgroundColor: Config.primaryColor,
+                                          backgroundColor: Colors.greenAccent,
                                           shape: RoundedRectangleBorder(
                                             borderRadius: BorderRadius.circular(5),
                                           ),
@@ -237,7 +237,7 @@ List<dynamic> schedules = [
                                         ),
                                         child: const Text(
                                           'Cancel',
-                                          style: TextStyle(color: Colors.white),
+                                          style: TextStyle(color: Colors.black),
                                         ),
                                       ),
                                     ),
@@ -278,24 +278,24 @@ class ScheduleCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Icon(Icons.calendar_today,
-            color: Config.primaryColor,
+            color: Colors.black,
             size: 15,
           ),
           SizedBox(width: 5,),
           Text(
             'Wednesday 10/1/2023',
-            style: TextStyle(color: Config.primaryColor),
+            style: TextStyle(color: Colors.black),
           ),
           SizedBox(width: 20,),
           Icon(Icons.access_alarm,
-            color:Config.primaryColor,
+            color:Colors.black,
             size: 17,
           ),
           SizedBox(width: 5,),
           Flexible(
             child: Text(
               '12.00 pm',
-              style: TextStyle(color: Config.primaryColor),
+              style: TextStyle(color: Colors.black),
             ),)
         ],
       ),

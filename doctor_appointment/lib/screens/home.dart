@@ -141,7 +141,7 @@ class _HomeScreenState extends State<HomeScreen> {
            Config.spaceSmall,
            Column(
              children: List.generate(10, (index){
-               return const DoctorsCard();
+               return const DoctorsCard(route: 'doc_details',);
              } )
              ,
            )

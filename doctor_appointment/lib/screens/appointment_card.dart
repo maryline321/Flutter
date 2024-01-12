@@ -72,7 +72,7 @@ class _AppointmentCardState extends State<AppointmentCard> {
                       ),
                       child: const Text(
                         'Cancel',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.black),
                       ),
                     ),
                   ),
@@ -81,7 +81,7 @@ class _AppointmentCardState extends State<AppointmentCard> {
                     child: ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.blue,
+                        backgroundColor: Colors.greenAccent,
                         shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5),
                         ),
@@ -89,7 +89,7 @@ class _AppointmentCardState extends State<AppointmentCard> {
                       ),
                       child: const Text(
                         'Completed',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.black),
                       ),
                     ),
                   ),
@@ -115,7 +115,7 @@ class ScheduleCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.grey,
+        color: Colors.white,
         borderRadius: BorderRadius.circular(10),
       ),
       width: double.infinity,
@@ -124,24 +124,24 @@ class ScheduleCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Icon(Icons.calendar_today,
-            color:Colors.white,
+            color:Colors.black,
             size: 15,
           ),
           SizedBox(width: 5,),
           Text(
             'Wednesday 10/1/2023',
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.black),
           ),
           SizedBox(width: 20,),
           Icon(Icons.access_alarm,
-            color:Colors.white,
+            color:Colors.black,
             size: 17,
           ),
           SizedBox(width: 5,),
           Flexible(
             child: Text(
             '12.00 pm',
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.black),
           ),)
         ],
       ),
