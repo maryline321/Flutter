@@ -11,6 +11,9 @@ class AppText {
     'signup_text':'Don\'t have an account?',
     'social_login':'Or continue with social account',
     'forgot_password':'Forgot Your Password',
+    'booking':'Book Appointment',
+    'appointment':'Make Appointment',
+    'back_home':'Home Page'
 
   };
 }

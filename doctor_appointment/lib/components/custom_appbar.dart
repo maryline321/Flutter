@@ -1,7 +1,4 @@
-import 'package:doctor_appointment/components/login.dart';
-import 'package:doctor_appointment/components/social_button.dart';
 import 'package:doctor_appointment/utils/config.dart';
-import 'package:doctor_appointment/utils/text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -38,7 +35,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
         ),
       ),
       leading: widget.icon != null ? Container(
-        margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+        margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           color: Config.primaryColor,
@@ -57,7 +54,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
           color: Colors.white,
         ),
       ): null,
-      actions: widget.actions ?? null,
+      actions: widget.actions,
     );
   }
 
